@@ -334,7 +334,7 @@ Masscan이 사용하는 옵션과 비슷하게 하기위해 다음 옵션이 사
 
 ### Test Case #2: Scan of all TCP ports using X concurrent jobs
 
-이 테스트 케이스에서는 Nmap 스캐닝을 동시 작업으로 진행시켜 느린 퍼포먼스를 해결하고자 했다. 이 테스트는 위의 Masscan 케이스와 마찬가지로 서브넷을 더 작은 단위로 쪼개서 수행했다. 또다시 아래의 파이썬 코드 `[split.py](http://split.py)` 를 이용해 대상 서브넷을 나누어 주었다. 
+이 테스트 케이스에서는 Nmap 스캐닝을 동시 작업으로 진행시켜 느린 퍼포먼스를 해결하고자 했다. 이 테스트는 위의 Masscan 케이스와 마찬가지로 서브넷을 더 작은 단위로 쪼개서 수행했다. 또다시 아래의 파이썬 코드 `split.py` 를 이용해 대상 서브넷을 나누어 주었다. 
 
     #!/usr/bin/python3
     import ipaddress, sys
